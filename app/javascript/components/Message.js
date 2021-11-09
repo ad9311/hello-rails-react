@@ -18,21 +18,26 @@ const Message = () => {
     }
   }
 
-  if (message !== null) {
-    return (
-      <div className="text-center">
-        <h1>{message.content}</h1>
-        <h2>{message.language}</h2>
-        <span>{flag()}</span>
-      </div>
-    );
-  } else {
-    return (
-      <div className="text-center">
-        <h1>No Messages :C</h1>
-      </div>
-    );
-  }
+  const loadMessage = (load = '') => (
+    <div className={`container ${load}`}>
+      {load !== '' &&
+        <div>
+          <h1>React-Rails!</h1>
+          <div className="language-flag">
+            <h2>{message.language}</h2>
+            <span className="emoji">{flag()}</span>
+          </div>
+          <h2>{message.content}</h2> 
+        </div>
+      }
+    </div>
+  );
+
+  return (
+    <div>
+      {status !== 'ready' ? loadMessage() : loadMessage('load')}
+    </div>
+  );
 }
 
 export default Message;
