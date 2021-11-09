@@ -61,6 +61,14 @@ Use Ctrl-C to stop
 ```
 Use one of the two links to open the application. One the application is running, click the random button to get a random message.
 
+### API Usage
+
+Api to get a random message:
+
+| Name     | Endpoint         | Method | Header                           |
+|----------|------------------|--------|----------------------------------|
+| Messages | /api/v1/messages | GET    | { "Accept": "application/json" } |
+
 ### Contributing
 
 Contributions, issues and, feature requests are welcome!
