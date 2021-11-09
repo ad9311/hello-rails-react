@@ -59,7 +59,7 @@ Puma starting in single mode...
 * Listening on http://[::1]:3000
 Use Ctrl-C to stop
 ```
-Use one of the two links to open the application. One the application is running, click the random button to get a random message.
+Use one of the two links to open the application. Once the application is running, click the random button to get a random message.
 
 ### API Usage
 
