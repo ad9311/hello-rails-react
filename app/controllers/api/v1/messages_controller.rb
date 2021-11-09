@@ -12,7 +12,7 @@ module Api
 
       def random_message
         rand_num = rand(@messages.first.id..@messages.last.id)
-        @messages.where(id: rand_num)
+        @messages.where(id: rand_num).first
       end
     end
   end

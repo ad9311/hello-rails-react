@@ -1,10 +1,18 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchMessage } from '../redux/message/messageReducer';
 
 const Message = () => {
+  const { status, message } = useSelector((state) => state.message);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchMessage());
+  }, [status]);
+
   return (
     <div>
-      <p>Olá!</p>
+      <h1>{message.content}</h1>
     </div>
   );
 }
