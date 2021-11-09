@@ -64,7 +64,9 @@ Use one of the two links to open the application. Once the application is runnin
 
 ### Troubleshooting
 
-If you get an error, plase make sure that you followed the steps stated above correctly. Also, make sure that your software is up to date and that all necessary software is installed.
+If you get an error, plase make sure that you followed the steps stated above correctly. Also, make sure that your software is up to date and that all necessary software is installed.</br>
+
+If the error persists run `rm -rf node_modules` (asumming you are on linux OS) and then try again the steps above.
 
 ## API Usage
 
