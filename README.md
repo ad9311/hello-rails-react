@@ -20,7 +20,7 @@ This application will display a greeting randomly en several languages.
 - [Rails](https://rubygems.org/gems/rails)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [NVM](https://github.com/nvm-sh/nvm)
-- [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) (Optional)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) (Recommended)
 
 To get started, first, clone this project by using the following command:
 
@@ -32,6 +32,7 @@ git clone https://github.com/ad9311/hello-rails-react.git
 
 Before launching the application, you will need to run a few commands in this order, line by line:</br>
 
+**NOTE:** Since react uses yarn it is recommended to use it as well.
 ```
 yarn install or npm install
 bundle install
@@ -61,7 +62,11 @@ Use Ctrl-C to stop
 ```
 Use one of the two links to open the application. Once the application is running, click the random button to get a random message.
 
-### API Usage
+### Troubleshooting
+
+If you get an error, plase make sure that you followed the steps stated above correctly. Also, make sure that your software is up to date and that all necessary software is installed.
+
+## API Usage
 
 Api to get a random message:
 
@@ -69,7 +74,7 @@ Api to get a random message:
 |----------|------------------|--------|----------------------------------|
 | Messages | /api/v1/messages | GET    | { "Accept": "application/json" } |
 
-### Contributing
+## Contributing
 
 Contributions, issues and, feature requests are welcome!
 
