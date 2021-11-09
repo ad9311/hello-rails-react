@@ -1,7 +1,7 @@
 import React from "react"
 
 const NoMatch = () => (
-  <div>
+  <div className="container load">
     <h1>Sorry Page not Found!</h1>
   </div>
 );

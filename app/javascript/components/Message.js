@@ -7,7 +7,7 @@ const Message = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (status !== 'ready') {
+    if (status === 'default') {
       dispatch(fetchMessage());
     }
   }, [status]);
@@ -15,6 +15,12 @@ const Message = () => {
   const flag = () => {
     if (status == 'ready') {
       return String.fromCodePoint(message.code_a, message.code_b);
+    }
+  }
+
+  const newMessage = () => {
+    if (status === 'ready') {
+      dispatch(fetchMessage());
     }
   }
 
@@ -28,6 +34,9 @@ const Message = () => {
             <span className="emoji">{flag()}</span>
           </div>
           <h2>{message.content}</h2> 
+          <button className="random" type="button" onClick={newMessage}>
+            Random
+          </button>
         </div>
       }
     </div>
